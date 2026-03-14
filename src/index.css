@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-lg shadow-md hover:opacity-95 transition-opacity;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  scroll-behavior: smooth
+}
+
+body {
+  @apply bg-soft text-gray-800 font-sans;
+}
